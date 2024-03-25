@@ -1,4 +1,3 @@
-const apiKey=process.env.REACT_APP_API_KEY
 
 // node --version # Should be >= 18
 // npm install @google/generative-ai
@@ -8,9 +7,13 @@ import {
     HarmCategory,
     HarmBlockThreshold,
   } from "@google/generative-ai";
-  
+
+
+// console.log(`API Key: ${API_KEY}`);
   const MODEL_NAME = "gemini-1.0-pro";
-  const API_KEY = '';
+  const API_KEY = process.env.REACT_APP_API_KEY;
+  console.log(API_KEY);
+  
   
   async function runChat(prompt) {
     const genAI = new GoogleGenerativeAI(API_KEY);

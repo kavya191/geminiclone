@@ -18,7 +18,7 @@ const Main = () => {
                 <p>How can i help you today?</p>
             </div>
             <div className="cards">
-                <div className="card">
+                <div className="card" >
                     <p>Suggest beutiful places to see on an upcoming road trip. </p>
                     <img src="https://i.postimg.cc/vBJZGwG9/compass-icon.png" alt="" />
                 </div>
@@ -59,7 +59,7 @@ const Main = () => {
                     <div>
                         <img src="https://i.postimg.cc/1XPJJK4f/gallery-icon.png" alt="" />
                         <img src="https://i.postimg.cc/3rBB3mdF/mic-icon.png" alt="" />
-                        <img onClick={()=>onSent()} src="https://i.postimg.cc/02yCjjSR/send-icon.png" alt="" />
+                     {input? <img onClick={()=>onSent()} src="https://i.postimg.cc/02yCjjSR/send-icon.png" alt="" />:null}  
                     </div>
                 </div>
                 <p className="bottom-info">

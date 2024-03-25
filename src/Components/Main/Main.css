@@ -46,6 +46,7 @@
     border-radius: 10px;
     position: relative;
     cursor: pointer;
+    margin-bottom: 20px;
 
 }
 .main .card img{
@@ -89,6 +90,7 @@
     flex: 1;
     background:transparent ;
     border: none;
+  
     outline: none;
     padding: 8px;
     font-size: 18px;
@@ -101,7 +103,7 @@
 .main .bottom-info{
     font-size: 13px;
     text-align: center;
-    margin: 15px auto;
+    margin: 15px auto; padding-bottom: 20px;
 }
 .result{
     padding: 0px 5%;
@@ -154,4 +156,19 @@
     font-size: 17px;
     font-weight: 300;
     line-height: 1.8;
+}
+@media (max-width:600px){
+    .main-bottom input{
+       width: 150px;
+       flex: none; 
+    }
+    .main-bottom img{
+        width: 20px;
+    }
+    .search-box{
+        padding: 5px 10px;
+    }
+    .search-box div{
+        gap: 5px;
+    }
 }
