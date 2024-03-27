@@ -36,7 +36,7 @@ export const ContextProvider=(props)=>{
         setRecentPrompt(input)
        
         let responseArray=response.split("**")
-        let newResponse;
+        let newResponse="";
         for(let i = 0; i<responseArray.length;i++){
             if(i === 0 || i%2 !== 1){
                 newResponse += responseArray[i]
@@ -51,6 +51,7 @@ export const ContextProvider=(props)=>{
             const nextWord=newResponseArray[i];
             delayPara(i,nextWord+" ")
         }
+      
         setLoading(false)
         setInput("")
     

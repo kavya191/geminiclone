@@ -71,6 +71,7 @@
     width: 100%;
     max-width: 900px;
     padding: 0px 20px;
+  
     margin: auto;
 }
 .search-box{
@@ -103,7 +104,8 @@
 .main .bottom-info{
     font-size: 13px;
     text-align: center;
-    margin: 15px auto; padding-bottom: 20px;
+    margin: 15px auto; 
+    padding-bottom: 20px;
 }
 .result{
     padding: 0px 5%;
